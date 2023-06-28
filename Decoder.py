@@ -22,7 +22,6 @@ def rand_rep(string_length, max_rep):
         list: A list containing unique random nucleotide strings.
 
     """
-    import random 
     
     n = 0  
     strings_list = list()  # List to store generated strings.
