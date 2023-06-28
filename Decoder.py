@@ -102,7 +102,7 @@ def generate_ascii_nuc_table(string_length, max_rep):
     print('The updated ASCII table with nucleotide codes has been created and saved as: {}'.format(new_table_name))
 
 
-def nuc_decoder(file_name, output_filename="Decoded_text", string_length=4, max_rep=2):
+def decoder(file_name, output_filename="Decoded_text", string_length=4, max_rep=2):
     """
     Decodes a file encoded using nucleotide ASCII encoding.
 
@@ -190,4 +190,4 @@ parser.add_argument('-r', '--max_rep', required=False, type=int, default=2, meta
 args = parser.parse_args()
 
 if __name__ == '__main__':
-    nuc_decoder(args.file_name, args.output_filename, args.string_length, args.max_rep)
+    decoder(args.file_name, args.output_filename, args.string_length, args.max_rep)
